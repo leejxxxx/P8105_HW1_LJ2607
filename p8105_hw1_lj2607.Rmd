@@ -20,3 +20,9 @@ nrow(penguins)
 ncol(penguins)
 ```
 
+```{r}
+penguins = janitor::clean_names(penguins)
+names(penguins)
+
+```
+
