@@ -26,3 +26,10 @@ names(penguins)
 
 ```
 
+```{r}
+mean_flipper_length <- mean(penguins$flipper_length_mm, na.rm = TRUE)
+
+# Print the result
+mean_flipper_length
+```
+
