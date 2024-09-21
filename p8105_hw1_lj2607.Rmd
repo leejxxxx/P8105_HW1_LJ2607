@@ -15,3 +15,8 @@ head(penguins)
 dim(penguins)
 ```
 
+```{r}
+nrow(penguins)
+ncol(penguins)
+```
+
