@@ -1,5 +1,6 @@
 ---
 title: "p8105_hw1_lj2607"
+author: Li Jiang
 output: github_document
 date: "2024-09-21"
 ---
