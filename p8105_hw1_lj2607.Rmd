@@ -7,7 +7,7 @@ date: "2024-09-21"
 Problem 1
 
 ```{r}
-#load dataset penguis
+#load dataset penguins
 
 data("penguins", package = "palmerpenguins")
 ```
