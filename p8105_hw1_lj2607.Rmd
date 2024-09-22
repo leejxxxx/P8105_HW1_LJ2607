@@ -3,30 +3,39 @@ title: "p8105_hw1_lj2607"
 output: github_document
 date: "2024-09-21"
 ---
+
+Problem 1
+
 ```{r}
+#load dataset penguis
+
 data("penguins", package = "palmerpenguins")
 ```
 
 ```{r}
-head(penguins)
+#check the first 5 rows in data
+
+head(penguins,5)
 ```
 
-```{r}
-dim(penguins)
-```
 
 ```{r}
+#check the size of dataset
+
 nrow(penguins)
 ncol(penguins)
 ```
 
 ```{r}
+#list valuable variable in th dataset
+
 penguins = janitor::clean_names(penguins)
 names(penguins)
 
 ```
 
 ```{r}
+#calculate the mean flipper length after cleaning NA values
 mean_flipper_length <- mean(penguins$flipper_length_mm, na.rm = TRUE)
 
 # Print the result
