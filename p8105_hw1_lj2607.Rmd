@@ -47,4 +47,4 @@ mean_flipper_length
 summary(penguins)
 ```
 
-The penguins dataset includes 344 observations across three species (Adelie, Chinstrap, and Gentoo) from three islands (Biscoe, Dream, and Torgersen) collected between 2007 and 2009. Key measurements include bill length (ranging from 32.1 mm to 59.6 mm), bill depth (13.1 mm to 21.5 mm), flipper length (172 mm to 231 mm with mean equal to 200.9), and body mass (2700 g to 6300 g). There are some missing values in the dataset.
+The penguins dataset includes 344 observations rows and 8 columns across three species (Adelie, Chinstrap, and Gentoo) from three islands (Biscoe, Dream, and Torgersen) collected between 2007 and 2009. Key measurements include sex, bill length (ranging from 32.1 mm to 59.6 mm), bill depth (13.1 mm to 21.5 mm), flipper length (172 mm to 231 mm with mean equal to 200.9), and body mass (2700 g to 6300 g). There are some missing values in the dataset.
