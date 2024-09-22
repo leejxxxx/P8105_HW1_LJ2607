@@ -105,3 +105,9 @@ mean(as.numeric(pull(random_sample,var = vec_factor)))
 mean(as.numeric(pull(random_sample,var = vec_char)))
 ```
 
+I was able to take the mean for random sample and logical vector while unable 
+to generate mean value for character vector and factor variable.I tried numeric 
+conversion to logical, character and factor variable. It works on logical variable
+and factor variable and I am able to get the mean value. However, it is not working
+on character variable. This explains why I was unable to take the mean for character
+vector and factor variable before conducting numeric conversion.
