@@ -67,6 +67,8 @@ library(ggplot2)
 
 ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
 
+#save scatter plog as png file
+
 ggsave("scatterplot_penguins.png")
 
 ```
