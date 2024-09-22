@@ -36,7 +36,7 @@ names(penguins)
 
 ```{r}
 #calculate the mean flipper length after cleaning NA values
-mean_flipper_length <- mean(penguins$flipper_length_mm, na.rm = TRUE)
+mean_flipper_length = mean(penguins$flipper_length_mm, na.rm = TRUE)
 
 # Print the result
 mean_flipper_length
@@ -95,6 +95,9 @@ mean(pull(random_sample,var = vec_factor))
 ```
 
 ```{r}
+#take the mean of 10 factor vector as logical variable
+mean(as.numeric(pull(random_sample,var = vec_logical)))
+
 #take the mean of 10 factor vector as numeric variable
 mean(as.numeric(pull(random_sample,var = vec_factor)))
 
