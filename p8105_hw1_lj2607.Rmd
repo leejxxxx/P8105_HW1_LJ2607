@@ -87,6 +87,8 @@ random_sample = tibble(
   vec_factor = factor(rep(c("1", "2", "3"), length.out = 10))
 )
 
+# Print the result
+
 random_sample
 ```
 
