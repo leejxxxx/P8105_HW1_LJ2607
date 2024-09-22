@@ -69,8 +69,36 @@ random_sample = tibble(
   norm = rnorm(10),
   vec_logical = c(norm >0),
   vec_char = c("a","b","c","d","e","f","g","h","i","j"),
-  factor_vector <- factor(rep(c("1", "2", "3"), length.out = 10))
+  vec_factor = factor(rep(c("1", "2", "3"), length.out = 10))
 )
 random_sample
+```
+
+```{r}
+#take the mean of 10 random sample
+mean(pull(random_sample,var = norm))
+```
+
+```{r}
+#take the mean of 10 logical vector
+mean(pull(random_sample,var = vec_logical))
+```
+
+```{r}
+#take the mean of 10 character vector
+mean(pull(random_sample,var = vec_char))
+```
+
+```{r}
+#take the mean of 10 factor vector
+mean(pull(random_sample,var = vec_factor))
+```
+
+```{r}
+#take the mean of 10 factor vector as numeric variable
+mean(as.numeric(pull(random_sample,var = vec_factor)))
+
+#take the mean of 10 character vector as numeric variable
+mean(as.numeric(pull(random_sample,var = vec_char)))
 ```
 
