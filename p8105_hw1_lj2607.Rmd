@@ -13,7 +13,7 @@ data("penguins", package = "palmerpenguins")
 ```
 
 ```{r}
-#check the first 5 rows in data
+#check the first 10 rows in data
 
 head(penguins,10)
 ```
@@ -56,5 +56,21 @@ library(ggplot2)
 #make a scatterplot with X as bill_length_mm and Y as flipper_length_mm and color points using Species variable
 ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
 ggsave("scatterplot_penguins.png")
+```
+
+Problem 2
+
+```{r}
+# load package tidyverse
+library(tidyverse)
+
+# create dataframe based on requirment
+random_sample = tibble(
+  norm = rnorm(10),
+  vec_logical = c(norm >0),
+  vec_char = c("a","b","c","d","e","f","g","h","i","j"),
+  factor_vector <- factor(rep(c("1", "2", "3"), length.out = 10))
+)
+random_sample
 ```
 
